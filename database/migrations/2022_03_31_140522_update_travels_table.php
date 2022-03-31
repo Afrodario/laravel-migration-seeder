@@ -26,7 +26,7 @@ class UpdateTravelsTable extends Migration
     public function down()
     {
         Schema::table('travels', function (Blueprint $table) {
-            $table->dropColumn('direct_flight');
+            //
         });
     }
 }

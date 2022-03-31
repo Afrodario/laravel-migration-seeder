@@ -24,7 +24,6 @@ class CreateTravelsTable extends Migration
             $table->boolean('travel_insurance');
             $table->decimal('price', 5, 2);
             $table->timestamps();
-            //$table->boolean('direct_flight');
         });
     }
 
@@ -35,6 +34,6 @@ class CreateTravelsTable extends Migration
      */
     public function down()
     {
-        //Schema::dropIfExists('travels');
+        Schema::dropIfExists('travels');
     }
 }
